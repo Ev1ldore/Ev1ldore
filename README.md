@@ -8,6 +8,14 @@ I build knowledge assistants and AI workbenches that connect retrieval, evidence
 
 ## Selected work
 
+### [Customer Profile](https://github.com/Ev1ldore/customer-profile)
+
+A local B2B customer research workbench that turns PDF, DOCX, Markdown, and text materials into structured reports with traceable evidence. A focused view connects each field to its evidence chain and source text; human edits remain separate and survive regeneration.
+
+**Stack:** Python · SQLite · JSON Schema · Vanilla JavaScript
+
+Includes scoped customer/project records, reviewable verification plans, a public-page fetcher, a Brave Search adapter, and JSON / Markdown export. The current MVP uses conservative rules and human review; live search integration remains unverified, and model / vector retrieval is not yet implemented.
+
 ### [Amazon After-Sales Agent](https://github.com/Ev1ldore/amazon-after-sales-agent)
 
 An internal after-sales workbench for Amazon seller teams: case management, order checks, policy retrieval, reply drafts, and human review. An eight-node LangGraph workflow connects analysis to versioned knowledge releases, local execution traces, and offline evaluation.
