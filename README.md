@@ -6,6 +6,12 @@ I build knowledge assistants and AI workbenches that connect retrieval, evidence
 
 [Writing & experiments](https://modelwithin.cloud) · [Public projects](https://github.com/Ev1ldore?tab=repositories)
 
+## Current focus
+
+### WeCom Personal Reply Agent — private local MVP
+
+I am building a local-first assistant that reads new messages from a verified Enterprise WeChat desktop conversation, prepares an LLM reply, and keeps sending under explicit user control. It preserves the original displayed message time, filters self messages, persists deduplication and send outcomes in SQLite, and starts in dry-run mode. The implementation is private while the interaction flow and real-device validation are still being refined.
+
 ## Selected work
 
 ### [Customer Profile](https://github.com/Ev1ldore/customer-profile)
