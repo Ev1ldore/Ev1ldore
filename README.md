@@ -8,9 +8,9 @@ I build knowledge assistants and AI workbenches that connect retrieval, evidence
 
 ## Current focus
 
-### WeCom Personal Reply Agent — private local MVP
+### [wecom-agent](https://github.com/Ev1ldore/wecom-agent) — local MVP
 
-I am building a local-first assistant that reads new messages from a verified Enterprise WeChat desktop conversation, prepares an LLM reply, and keeps sending under explicit user control. It preserves the original displayed message time, filters self messages, persists deduplication and send outcomes in SQLite, and starts in dry-run mode. The implementation is private while the interaction flow and real-device validation are still being refined.
+An open local-first Enterprise WeChat personal-reply agent for macOS. It reads a verified desktop conversation, prepares LLM replies, preserves the original displayed message time, filters self messages, and persists deduplication and send outcomes in SQLite. It starts in dry-run mode; live sending requires explicit local activation.
 
 ## Selected work
 
