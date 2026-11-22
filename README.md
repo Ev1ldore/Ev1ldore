@@ -10,6 +10,8 @@ Building AI applications around knowledge, process, and human judgment.
 [![Blog — Model Within](https://img.shields.io/badge/Blog-Model%20Within-2563EB?style=for-the-badge&logo=wordpress&logoColor=white)](https://modelwithin.cloud)
 [![GitHub — Ev1ldore](https://img.shields.io/badge/GitHub-Ev1ldore-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ev1ldore?tab=repositories)
 
+**English** · [简体中文](README.zh-CN.md)
+
 </div>
 
 ## Projects
