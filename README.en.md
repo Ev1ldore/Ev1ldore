@@ -14,30 +14,30 @@ Building AI applications around knowledge, process, and human judgment.
 
 </div>
 
-## Selected projects
+## Projects
 
-### 01 / Answers with receipts
+### 01
 **[Domain Knowledge Assistant ↗](https://github.com/Ev1ldore/domain-knowledge-assistant)**
 
 Go from “What is the answer?” to “What supports it?” A document-grounded Q&A application combining hybrid retrieval, optional reranking, and claim-level evidence links, with explicit handling of missing information, conflicting sources, and human review.
 
 `Python` `FastAPI` `SQLite` `Hybrid Retrieval`
 
-### 02 / From drafts to decisions
+### 02
 **[Amazon After-Sales Agent ↗](https://github.com/Ev1ldore/amazon-after-sales-agent)**
 
 Give support teams order facts and policy evidence alongside their cases. A LangGraph workflow connects checks, retrieval, recommendations, and reply drafts, with version management, execution traces, and human approval for traceable collaboration.
 
 `Python` `LangGraph` `FastAPI` `Vue 3`
 
-### 03 / A workflow for the creative work
+### 03
 **[Content Studio ↗](https://github.com/Ev1ldore/content-studio)**
 
 Take source material to a reviewable content package. Topic selection, article editing, visual production, and export share a workflow with version-bound approvals, checkpoint recovery, and individual visual-page revisions.
 
 `React` `FastAPI` `LangGraph` `PostgreSQL`
 
-### 04 / Context from scattered information
+### 04
 **[Customer Profile ↗](https://github.com/Ev1ldore/customer-profile)**
 
 Turn documents and conversation notes into structured, reviewable customer reports. Connect fields to original evidence, preserve disagreements and human edits, and support web-verification and export workflows.

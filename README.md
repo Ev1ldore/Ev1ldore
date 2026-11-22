@@ -14,30 +14,30 @@
 
 </div>
 
-## 精选项目
+## 项目
 
-### 01 / 知识有出处
+### 01
 **[Domain Knowledge Assistant · 知识问答助手 ↗](https://github.com/Ev1ldore/domain-knowledge-assistant)**
 
 把“答案是什么”推进到“依据在哪里”。围绕自有文档构建问答应用，结合混合检索、可选重排序与逐结论证据关联，呈现资料缺失、来源冲突和人工复核入口。
 
 `Python` `FastAPI` `SQLite` `Hybrid Retrieval`
 
-### 02 / 草稿到决策
+### 02
 **[Amazon After-Sales Agent · 售后协作助手 ↗](https://github.com/Ev1ldore/amazon-after-sales-agent)**
 
 让客服带着订单事实和政策依据处理工单。通过 LangGraph 串联核查、检索、建议与回复草稿，以版本管理、执行轨迹和人工审核支撑可追溯的售后协作。
 
 `Python` `LangGraph` `FastAPI` `Vue 3`
 
-### 03 / 灵感有流程
+### 03
 **[Content Studio · 图文内容工作台 ↗](https://github.com/Ev1ldore/content-studio)**
 
 从一份资料走到一份可审核的内容包。将选题、文章编辑、图文制作与导出串成工作流，通过版本绑定的人工审核、检查点恢复和单页重做，支持反复打磨内容。
 
 `React` `FastAPI` `LangGraph` `PostgreSQL`
 
-### 04 / 信息成脉络
+### 04
 **[Customer Profile · 客户画像工作台 ↗](https://github.com/Ev1ldore/customer-profile)**
 
 把散落在文档与沟通记录中的客户信息整理成可复核的报告。连接结构化字段与原始证据，保留资料分歧和人工修订，并提供联网核实与导出流程。
