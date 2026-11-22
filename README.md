@@ -2,66 +2,64 @@
 
 # Chengyun
 
-**大模型应用开发 · RAG · Agent 工作流**
+**Applied AI · RAG · Agent Workflows**
 
-让模型走进业务，也让每一步经得起追问。  
-围绕知识、流程与人，构建有据可查、有序可循的 AI 应用。
+Bringing models into workflows—and making each step inspectable.  
+Building AI applications around knowledge, process, and human judgment.
 
 [![Blog — Model Within](https://img.shields.io/badge/Blog-Model%20Within-2563EB?style=for-the-badge&logo=wordpress&logoColor=white)](https://modelwithin.cloud)
 [![GitHub — Ev1ldore](https://img.shields.io/badge/GitHub-Ev1ldore-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ev1ldore?tab=repositories)
 
-**简体中文** · [English](README.en.md)
-
 </div>
 
-## 项目
+## Projects
 
 ### 01
-**[Domain Knowledge Assistant · 知识问答助手 ↗](https://github.com/Ev1ldore/domain-knowledge-assistant)**
+**[Domain Knowledge Assistant ↗](https://github.com/Ev1ldore/domain-knowledge-assistant)**
 
-把“答案是什么”推进到“依据在哪里”。围绕自有文档构建问答应用，结合混合检索、可选重排序与逐结论证据关联，呈现资料缺失、来源冲突和人工复核入口。
+Go from “What is the answer?” to “What supports it?” A document-grounded Q&A application combining hybrid retrieval, optional reranking, and claim-level evidence links, with explicit handling of missing information, conflicting sources, and human review.
 
 `Python` `FastAPI` `SQLite` `Hybrid Retrieval`
 
 ### 02
-**[Amazon After-Sales Agent · 售后协作助手 ↗](https://github.com/Ev1ldore/amazon-after-sales-agent)**
+**[Amazon After-Sales Agent ↗](https://github.com/Ev1ldore/amazon-after-sales-agent)**
 
-让客服带着订单事实和政策依据处理工单。通过 LangGraph 串联核查、检索、建议与回复草稿，以版本管理、执行轨迹和人工审核支撑可追溯的售后协作。
+Give support teams order facts and policy evidence alongside their cases. A LangGraph workflow connects checks, retrieval, recommendations, and reply drafts, with version management, execution traces, and human approval for traceable collaboration.
 
 `Python` `LangGraph` `FastAPI` `Vue 3`
 
 ### 03
-**[Content Studio · 图文内容工作台 ↗](https://github.com/Ev1ldore/content-studio)**
+**[Content Studio ↗](https://github.com/Ev1ldore/content-studio)**
 
-从一份资料走到一份可审核的内容包。将选题、文章编辑、图文制作与导出串成工作流，通过版本绑定的人工审核、检查点恢复和单页重做，支持反复打磨内容。
+Take source material to a reviewable content package. Topic selection, article editing, visual production, and export share a workflow with version-bound approvals, checkpoint recovery, and individual visual-page revisions.
 
 `React` `FastAPI` `LangGraph` `PostgreSQL`
 
 ### 04
-**[Customer Profile · 客户画像工作台 ↗](https://github.com/Ev1ldore/customer-profile)**
+**[Customer Profile ↗](https://github.com/Ev1ldore/customer-profile)**
 
-把散落在文档与沟通记录中的客户信息整理成可复核的报告。连接结构化字段与原始证据，保留资料分歧和人工修订，并提供联网核实与导出流程。
+Turn documents and conversation notes into structured, reviewable customer reports. Connect fields to original evidence, preserve disagreements and human edits, and support web-verification and export workflows.
 
 `Python` `SQLite` `JSON Schema` `JavaScript`
 
 <details>
-<summary>项目状态与验证边界</summary>
+<summary>Project status and validation boundaries</summary>
 
-- **知识问答助手：** 面向小型知识库、单进程部署；规模与并发性能未验证，模型审核效果需按领域评估。
-- **售后协作助手：** 订单接入通过 fixture 与模拟响应验证；真实卖家及 MySQL/Milvus 路径仍需独立验证，不自动发送消息或退款。
-- **内容工作台：** 提供本地 Mock 演示；Mock / 文字 API 模式图片为固定样例，独立进程模式使用模板渲染，内容由用户手动发布。
-- **客户画像：** 面向本地使用，演示资料为合成数据，证据支持度采用规则计算。
+- **Domain Knowledge Assistant:** Designed for small knowledge bases and single-process deployment. Scale and concurrency remain unverified; model-based review requires domain-specific evaluation.
+- **Amazon After-Sales Agent:** Order integration is validated with fixtures and simulated responses. Live seller integration and real MySQL/Milvus paths require separate validation. No automatic message sending or refunds.
+- **Content Studio:** Includes a local Mock demo. Mock / text-API modes use fixed sample images; separate-process mode uses template rendering. Users publish exported content manually.
+- **Customer Profile:** Intended for local use. Demo materials are synthetic; evidence support is calculated using rules.
 
-具体实现与验收记录见各项目仓库。
+See each repository for implementation details and validation records.
 
 </details>
 
-## 工程关注
+## Engineering focus
 
-**证据追溯** / **状态与恢复** / **人工审核** / **评测与观测**
+**Evidence & provenance** / **State & recovery** / **Human review** / **Evaluation & observability**
 
-我关心模型生成结果之后的工程问题：依据如何保留，状态如何流转，失败如何处理，最终由谁确认。
+I focus on what happens after a model produces an answer: how evidence is retained, how state moves forward, how failures are handled, and who makes the final call.
 
 ---
 
-[**Model Within ↗**](https://modelwithin.cloud) · 我的技术博客与实验记录
+[**Model Within ↗**](https://modelwithin.cloud) · Technical writing and experiments
