@@ -1,66 +1,42 @@
+<div align="center">
+
 # Chengyun
 
-**Applied AI · RAG · Agent Workflows · LLM Products**
+**大模型应用开发 · RAG · Agent 工作流**
 
-I build knowledge assistants and AI workbenches that connect retrieval, evidence, and human review to practical workflows. My focus is on making answers traceable, long-running tasks recoverable, and generated content reviewable before it is used.
+把知识检索、模型能力与人工审核接入具体业务。  
+关注可追溯的回答、可恢复的任务，以及可复核的交付。
 
-[Writing & experiments](https://modelwithin.cloud) · [Public projects](https://github.com/Ev1ldore?tab=repositories)
+[![Blog — Model Within](https://img.shields.io/badge/Blog-Model%20Within-2563EB?style=for-the-badge&logo=wordpress&logoColor=white)](https://modelwithin.cloud)
+[![GitHub — Ev1ldore](https://img.shields.io/badge/GitHub-Ev1ldore-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ev1ldore?tab=repositories)
 
-## Current focus
+[阅读博客 ↗](https://modelwithin.cloud) · [浏览仓库 ↗](https://github.com/Ev1ldore?tab=repositories)
 
-### [wecom-agent](https://github.com/Ev1ldore/wecom-agent) — local MVP
+</div>
 
-An open local-first Enterprise WeChat personal-reply agent for macOS. It reads a verified desktop conversation, prepares LLM replies, preserves the original displayed message time, filters self messages, and persists deduplication and send outcomes in SQLite. It starts in dry-run mode; live sending requires explicit local activation.
+## 精选项目
 
-## Selected work
+| 项目 | 解决的问题 | 主要技术 |
+| :--- | :--- | :--- |
+| [**知识问答助手**](https://github.com/Ev1ldore/domain-knowledge-assistant) | 从自有文档中检索答案，关联来源证据，呈现资料缺失与冲突。 | Python · FastAPI · 混合检索 · SQLite |
+| [**Amazon 售后协作助手**](https://github.com/Ev1ldore/amazon-after-sales-agent) | 串联工单、订单核查、政策检索和回复草稿，交由人工审核。 | LangGraph · FastAPI · Vue 3 |
+| [**Content Studio**](https://github.com/Ev1ldore/content-studio) | 从资料与选题走到文章、图文审核和内容包导出。 | LangGraph · React · PostgreSQL |
+| [**客户画像工作台**](https://github.com/Ev1ldore/customer-profile) | 将分散资料整理为结构化报告，支持来源定位、人工修订与联网复核。 | Python · SQLite · JavaScript |
 
-### [Customer Profile](https://github.com/Ev1ldore/customer-profile)
+<details>
+<summary>项目状态与验证边界</summary>
 
-A local B2B customer workbench for PDF, DOCX, Markdown, and text materials. Structured reports connect fields to source evidence, preserve human edits across regeneration, and support reviewable web-verification workflows and JSON / Markdown export.
+- **知识问答助手：** 面向小型知识库、单进程部署；规模与并发性能未验证，模型审核效果需按领域评估。
+- **Amazon 售后协作助手：** 订单接入通过 fixture 与模拟响应验证；真实卖家、MySQL/Milvus 路径仍需独立验证，不自动发送消息或退款。
+- **Content Studio：** 提供本地 Mock 演示；Mock / 文字 API 模式图片为固定样例，独立进程模式使用模板渲染，内容由用户手动发布。
+- **客户画像工作台：** 面向本地使用，演示资料为合成数据，证据支持度采用规则计算。
 
-**Stack:** Python · SQLite · JSON Schema · Vanilla JavaScript
+具体实现与验收记录见各项目仓库。
 
-### [Amazon After-Sales Agent](https://github.com/Ev1ldore/amazon-after-sales-agent)
+</details>
 
-An internal after-sales workbench for Amazon seller teams: case management, order checks, policy retrieval, reply drafts, and human review. An eight-node LangGraph workflow connects analysis to versioned knowledge releases, local execution traces, and offline evaluation.
+## 关注方向
 
-**Stack:** Python · FastAPI · Vue 3 · TypeScript · LangGraph · MySQL · Milvus
+**RAG 与证据追溯** · **Agent 状态与恢复** · **人工审核与版本管理** · **离线评测与执行轨迹**
 
-The Amazon read-only adapter is implemented and tested with fixtures and simulated responses; live seller integration remains unverified. Replies require human approval, and the application does not send Amazon messages or issue refunds automatically.
-
-### [Content Studio](https://github.com/Ev1ldore/content-studio)
-
-A Chinese content workbench that takes source materials through topic selection, article editing, visual production, and downloadable Xiaohongshu / WeChat content packages. Human review is tied to specific versions; persistent checkpoints support workflow recovery, and individual visual pages can be regenerated.
-
-**Stack:** React · FastAPI · LangGraph · PostgreSQL · Chromium
-
-Includes a local Mock demo and documented validation paths. Content is exported for manual publishing; generation and rendering behavior depend on the selected runtime mode.
-
-### [Domain Knowledge Assistant](https://github.com/Ev1ldore/domain-knowledge-assistant)
-
-A document-grounded Q&A application combining dense retrieval, BM25, RRF fusion, and optional CrossEncoder reranking. Claim-level evidence checks, source snapshots, conflict handling, and administrator review make the path from retrieved text to an answer inspectable.
-
-**Stack:** Python · FastAPI · SQLite · NumPy · BM25 · CrossEncoder
-
-Designed for small knowledge bases in a single-process deployment. Evidence checks reduce unsupported output, but model-based review still requires evaluation for each domain.
-
-### [Model Within AI Reader](https://github.com/Ev1ldore/model-within-ai-reader)
-
-An AI reading assistant for the [Model Within](https://modelwithin.cloud) knowledge site. It supports article summaries, selection-based Q&A, and site-wide retrieval. The public repository is a documentation-first case study; the production implementation remains private.
-
-### [LLM Video Script Generator](https://github.com/Ev1ldore/llm-video-script-generator)
-
-A Streamlit application that turns a topic, target duration, and creativity setting into a structured Chinese video script. It supports multiple OpenAI-compatible model providers and augments generation with Chinese Wikipedia retrieval.
-
-## Engineering focus
-
-- **Evidence-grounded RAG:** document processing, hybrid retrieval, reranking, citations, and conflict handling.
-- **Stateful agent workflows:** orchestration, checkpoints, human interrupts, version checks, and failure recovery.
-- **Practical AI products:** full-stack workbenches, model gateways, background jobs, and reviewable deliverables.
-- **Evaluation and observability:** offline evaluation, execution traces, reproducible demos, and explicit integration boundaries.
-
-## Working principles
-
-I prefer systems that are measurable, debuggable, and honest about their boundaries. A useful AI application should make it clear where an answer came from, what happens when a step fails, and which decisions still belong to a person.
-
-Public repositories document their implementation and validation scope. Demo behavior, simulated integrations, and live-service verification are kept distinct.
+> 让答案有来源，让失败有状态，让关键决定由人确认。
